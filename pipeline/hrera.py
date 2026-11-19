@@ -1,4 +1,4 @@
-"""Find each society's HRERA Gurugram filing and OCR its brochure / apartment plan documents.
+"""Find each society's HRERA filing and OCR its brochure / apartment plan documents.
 
 usage: uv run --with pyobjc-framework-Vision --with pyobjc-framework-Quartz python hrera.py gurgaon [limit]
        -> data/verified/<city>-hrera.json
@@ -20,7 +20,8 @@ from build_city import tokens
 ROOT = pathlib.Path(__file__).parent
 CACHE = ROOT / "cache" / "hrera"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-LIST_URL = "https://haryanarera.gov.in/admincontrol/registered_projects/2"  # Gurugram authority
+CITIES = json.loads((ROOT.parent / "data" / "cities.json").read_text())
+AUTHORITY = {1: "Panchkula", 2: "Gurugram"}  # HRERA list ids; Panchkula covers every district but Gurugram
 WANT = re.compile(r"BROCHURE|APARTMENT\s*PLAN|UNIT\s*PLAN|FLOOR\s*PLAN|TYPICAL\s*FLOOR|DWELLING\s*UNIT|AREA\s*DIAGRAM|APPROVED\s*BUILDING\s*PLAN|BUILDING\s*PLAN(?!.*(LETTER|APPROVAL))", re.I)
 SKIP = re.compile(r"LAYOUT|SITE\s*PLAN|ZONING|DEMARCATION|SERVICE|LICEN|CASH|AFFIDAVIT|BANK|CERTIFICATE|PAYMENT|AGREEMENT", re.I)
 
@@ -46,14 +47,25 @@ def cells_of(row):
     return [re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", c)).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
 
 
-def registered_projects():
-    html = get(LIST_URL, "registered_2.html")
+def hrera_cfg(city):
+    return CITIES[city].get("hrera") or {"authority": 2}
+
+
+def registered_projects(city="gurgaon"):
+    """Every project on the city's HRERA authority list, kept to the city's district when one is set."""
+    cfg = hrera_cfg(city)
+    a = cfg["authority"]
+    html = get(f"https://haryanarera.gov.in/admincontrol/registered_projects/{a}", f"registered_{a}.html")
     out = []
     for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S):
         c = cells_of(row)
         link = [l for l in re.findall(r'href="([^"]+)"', row) if "project_preview" in l]
         if len(c) >= 6 and link:
-            out.append({"reg": c[1], "rera": c[2], "name": c[3], "promoter": c[4], "address": c[5], "url": link[0]})
+            p = {"reg": c[1], "rera": c[2], "name": c[3], "promoter": c[4], "address": c[5],
+                 "district": c[6] if len(c) > 6 else None, "url": link[0]}
+            if cfg.get("district") and not (p["district"] or "").upper().startswith(cfg["district"]):
+                continue
+            out.append(p)
     return out
 
 
@@ -110,8 +122,8 @@ def main(city="gurgaon", limit=None):
     data = json.loads((ROOT.parent / "web" / "public" / "data" / f"{city}.json").read_text())
     out_file = ROOT.parent / "data" / "verified" / f"{city}-hrera.json"
     done = json.loads(out_file.read_text())["societies"] if out_file.exists() else {}
-    projects = registered_projects()
-    print("HRERA Gurugram projects", len(projects), flush=True)
+    projects = registered_projects(city)
+    print(f"HRERA {AUTHORITY[hrera_cfg(city)['authority']]} projects", len(projects), flush=True)
 
     def has_rooms(s):
         return any(u.get("bedrooms") or u.get("ai") for u in s["unit_types"])

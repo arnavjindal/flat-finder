@@ -1,0 +1,327 @@
+[
+{
+"mb_id": "5331693",
+"name": "Global Spaces Hisar",
+"developer": null,
+"locality": "Rajeev Nagar",
+"pincode": "125001",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/global-spaces-hisar-rajeev-nagar-hisar-pdpid-4d4235333331363933",
+"lat": 29.153748,
+"lng": 75.741659,
+"towers": 100.0,
+"units": 200.0,
+"status": "Ready To Move",
+"amenities": [
+"Club House",
+"Power Back Up",
+"Swimming Pool",
+"Lift",
+"Security",
+"Gymnasium",
+"Rain Water Harvesting",
+"Reserved Parking",
+"Visitor Parking",
+"Intercom Facility",
+"Maintenance Staff",
+"Bank & ATM",
+"Indoor Games Room",
+"Kids Club"
+],
+"configs": {
+"units": [],
+"by_bhk": {}
+},
+"rating_count": 0,
+"ratings": {},
+"sale_count": 5,
+"sale_listings": [
+{
+"bhk": null,
+"price": 14210000.0,
+"sqft": null,
+"psf": 10889.0,
+"furnished": null,
+"floor": null,
+"posted": "2026-10-14",
+"type": "Residential Plot"
+},
+{
+"bhk": null,
+"price": 11718000.0,
+"sqft": null,
+"psf": 10333.0,
+"furnished": null,
+"floor": null,
+"posted": "2026-10-14",
+"type": "Residential Plot"
+},
+{
+"bhk": null,
+"price": 34006000.0,
+"sqft": null,
+"psf": 10889.0,
+"furnished": null,
+"floor": null,
+"posted": "2026-10-14",
+"type": "Residential Plot"
+},
+{
+"bhk": null,
+"price": 16795800.0,
+"sqft": null,
+"psf": 10850.0,
+"furnished": null,
+"floor": null,
+"posted": "2026-10-14",
+"type": "Residential Plot"
+},
+{
+"bhk": null,
+"price": 16275000.0,
+"sqft": null,
+"psf": 10514.0,
+"furnished": null,
+"floor": null,
+"posted": "2026-10-14",
+"type": "Residential Plot"
+}
+],
+"description": "Global Spaces Hisar Status Ready To Move Global Spaces Hisar Launch Date 01 December 2003 Towers in Global Spaces Hisar 100 Global Spaces Hisar in Rajeev Nagar, Hisar, offers high end to luxurious properties within the price range of $priceRange. The current status of the project is Ready To Move. The project features a total of 200 units. There are a total of 100 towers in the project. The official launch date of the project was December 2003.The address of this smartly planned project is Raipur Road, Near Park, Rajeev Nagar, Hisar 125001.The project is located at one of the most sought\u2026"
+},
+{
+"mb_id": "5458549",
+"name": "Girdhar Rameshwaram Greens",
+"developer": "Girdhar Gopal Builder and Developer",
+"locality": "Budha Khera",
+"pincode": "125113",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/girdhar-rameshwaram-greens-budha-khera-hisar-pdpid-4d4235343538353439",
+"possession": "2030",
+"units": 144.0,
+"acres": 9,
+"prop_types": "10350",
+"card_units": [
+{
+"bhk": null,
+"sqft": 1309.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1353.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1393.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1397.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1431.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1442.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1471.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1507.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1537.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1550.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1554.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1577.0,
+"kind": "10000"
+}
+],
+"images": [
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Project-Photo-15-Girdhar-Rameshwaram-Greens-Hisar-5458549_685_1024_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Project-Photo-15-Girdhar-Rameshwaram-Greens-Hisar-5458549_685_1024.jpg"
+},
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Project-Photo-14-Girdhar-Rameshwaram-Greens-Hisar-5458549_682_1021_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Project-Photo-14-Girdhar-Rameshwaram-Greens-Hisar-5458549_682_1021.jpg"
+},
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Master-Plan-1-Girdhar-Rameshwaram-Greens-Hisar-5458549_727_1137_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Master-Plan-1-Girdhar-Rameshwaram-Greens-Hisar-5458549_727_1137.jpg"
+}
+],
+"lat": 29.09672398,
+"lng": 75.97919631,
+"rera_id": "HRERA-PKL-HSR-860-2026",
+"status": "Under Construction",
+"configs": {
+"units": [
+{
+"bhk": null,
+"sqft": 1309.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1353.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1393.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1397.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1431.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1442.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1471.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1507.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1537.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1550.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1554.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1577.0,
+"kind": "10000"
+}
+],
+"by_bhk": {}
+},
+"rating_count": 0,
+"ratings": {},
+"description": "Girdhar Rameshwaram Greens is a Under Construction project by Girdhar Gopal Builder and Developer in Budha Khera Hisar, offering Plot configuration. Below are the key details of Girdhar Rameshwaram Greens. Property Types Plot Girdhar Rameshwaram Greens Status Under Construction Girdhar Rameshwaram Greens Launch Date 01 February 2026 Girdhar Rameshwaram Greens Possession Date 01 November 2030 Girdhar Rameshwaram Greens in Budha Khera, Hisar, offers high end to luxurious properties within the price range of $priceRange. Girdhar Rameshwaram Greens is smartly developed by the well-known builder\u2026"
+},
+{
+"mb_id": "5219537",
+"name": "Laxmi Plaza",
+"developer": null,
+"locality": "Urban Estate II",
+"pincode": "125001",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/laxmi-plaza-urban-estate-ii-hisar-pdpid-4d4235323139353337",
+"lat": 29.1456005,
+"lng": 75.7364248,
+"status": "Ready To Move",
+"configs": {
+"units": [],
+"by_bhk": {}
+},
+"rating_count": 0,
+"ratings": {},
+"locality_rating": 5.0,
+"description": "Laxmi Plaza Status Ready To Move Laxmi Plaza in Urban Estate II, Hisar, offers high end to luxurious properties within the price range of $priceRange. Presently, the project is in the Ready To Move phase. The exact address of this famous project is NH-10, MC Colony, Urban Estate II, Hisar, Haryana. Its pincode is 125001."
+},
+{
+"mb_id": "5411687",
+"name": "Prem Bhawan",
+"developer": null,
+"locality": "Balsamand Road",
+"pincode": "125004",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/prem-bhawan-balsamand-road-hisar-pdpid-4d4235343131363837",
+"lat": 29.1498529111731,
+"lng": 75.6998050641416,
+"status": "Ready To Move",
+"configs": {
+"units": [],
+"by_bhk": {}
+},
+"rating_count": 0,
+"ratings": {},
+"locality_rating": 3.8,
+"description": "Prem Bhawan Status Ready To Move Prem Bhawan is one of the well-known project in Balsamand Road, Hisar, which offers property options starting from $priceRange. The current phase of the project is Ready To Move. The project falls under the pincode 125004."
+},
+{
+"mb_id": "5406629",
+"name": "Ishwar Bharti Apartments",
+"developer": null,
+"locality": "Hisar Road",
+"pincode": null,
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/ishwar-bharti-apartments-hisar-road-hisar-pdpid-4d4235343036363239",
+"lat": 29.1604656,
+"lng": 75.7626302,
+"status": "Ready To Move",
+"configs": {
+"units": [],
+"by_bhk": {}
+},
+"rating_count": 0,
+"ratings": {},
+"description": "Ishwar Bharti Apartments Status Ready To Move Ishwar Bharti Apartments is a well-known project located in Hisar Road, Hisar, offering premium properties in the price range of $priceRange. At present, the project is in the Ready To Move stage."
+}
+]

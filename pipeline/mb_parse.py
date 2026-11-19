@@ -86,6 +86,96 @@ def card_to_project(c):
     }
 
 
+def project_identity(html):
+    """Index record read from a project page itself, for cities with no Magicbricks project list."""
+    state = _json_after(html, "window.SERVER_PRELOADED_STATE_") or {}
+    mob = (state.get("projectDetailData") or {}).get("prjMobileBean") or {}
+    info = mob.get("infoBean") or {}
+    if not mob.get("psmId") or not mob.get("projectUrl"):
+        return None
+    devs = mob.get("projectDeveloperList") or []
+    devs = [devs] if isinstance(devs, dict) else devs  # one object or a list, depending on the page
+    return {
+        "mb_id": str(mob["psmId"]),
+        "name": (info.get("projectName") or mob.get("opsmname") or "").strip(),
+        "developer": next((d["developerName"] for d in devs if isinstance(d, dict) and d.get("developerName")), None),
+        "locality": info.get("lmtDName") or info.get("localityName"),
+        "pincode": (mob.get("detailBean") or {}).get("pincode"),
+        "city_id": str(info.get("cityId") or ""),
+        "type_codes": [t.strip() for t in str(info.get("psmCndPropTypes") or "").split(",") if t.strip()],
+        "url": "https://www.magicbricks.com/" + mob["projectUrl"].lstrip("/"),
+    }
+
+
+_SUBPAGE = re.compile(r"-(?:amenities|floor-plans?|location|photo-videos|photos?|reviews?|brochure|rera-details|price-list)(?=-)")
+
+
+def project_path(path):
+    """Main project page path for a project or one of its sub-pages (amenities, floor plan, location, ...)."""
+    return _SUBPAGE.sub("", path, count=1)
+
+
+def project_links(html):
+    """Main project page paths linked from a page (sub-page links folded in), one per project id."""
+    out = {}
+    for path, pid in re.findall(r"/([a-z0-9-]+-pdpid-([0-9a-f]+))", html.replace("\\u002F", "/")):
+        out.setdefault(pid, project_path(path))
+    return list(out.values())
+
+
+LISTING_KIND = {"Residential House": "house", "Villa": "villa", "Builder Floor Apartment": "builder floor",
+                "Multistorey Apartment": "apartment", "Apartment": "apartment", "Penthouse": "apartment",
+                "Studio Apartment": "apartment", "Residential Plot": "plot", "Agricultural Land": "farmland"}
+_LISTING_URL = re.compile(r"^(?:(\d+)-BHK-)?([\d.]+)-(.+?)-(?:Residential|Builder|Multistorey|Agricultural|Villa|Apartment|Penthouse|Studio)")
+
+
+def parse_listing_cards(html):
+    """Every property card on a Magicbricks listing (search) page, sale or rent, as raw dicts."""
+    out, seen = [], set()
+    for m in re.finditer(r'"encId"\s*:', html):
+        j = html.rfind("{", 0, m.start())
+        while j > 0:
+            try:
+                obj, _ = _DEC.raw_decode(html[j:])
+                if "encId" in obj and obj.get("id") and obj["id"] not in seen:
+                    seen.add(obj["id"])
+                    out.append(obj)
+                break
+            except ValueError:
+                j = html.rfind("{", 0, j)
+    return out
+
+
+def _point(lat, lng):
+    lat, lng = _num(lat), _num(lng)
+    return [round(lat, 6), round(lng, 6)] if lat and lng else None
+
+
+def listing_record(c):
+    """A residential or farmland listing card -> record with sizes as printed; None for other property types."""
+    kind = LISTING_KIND.get(c.get("propTypeD"))
+    if not kind or not c.get("url"):
+        return None
+    m = _LISTING_URL.match(c["url"])  # the listing's own title, e.g. 825-Sq-yrd-Residential-Plot-FOR-Sale-...
+    geo = (c.get("ltcoordGeo") or "").split(",")
+    bhk = c.get("bedroomD")
+    return {
+        "id": str(c["id"]), "kind": kind, "type": c["propTypeD"], "deal": "rent" if c.get("transType") == "Rent" else "sale",
+        "price": _num(c.get("price")), "price_text": c.get("priceD"),
+        "bhk": int(bhk) if str(bhk or "").isdigit() else None, "baths": c.get("bathD"),
+        "area": _num(m.group(2)) if m else None, "area_unit": m.group(3).replace("-", " ") if m else None,
+        "built_sqft": _num(c.get("caSqFt")) if kind not in ("plot", "farmland") else None,
+        "carpet": f"{c['carpetArea']} {c.get('carpAreaUnit') or ''}".strip() if c.get("carpetArea") else None,
+        "locality": c.get("lmtDName"), "pin": _point(c.get("pmtLat"), c.get("pmtLong")),
+        "locality_point": _point(*geo) if len(geo) == 2 else None,
+        "posted": (c.get("postedLabelD") or "").replace("Posted:", "").strip() or None, "seller": c.get("userType"),
+        "status": c.get("possStatusD"), "floor": c.get("floorD"), "furnished": c.get("furnishedD"),
+        "title": c.get("propertyTitle") or c.get("auto_desc"), "in_project": c.get("isProjProp") == "Y",
+        "city_id": str(c.get("ct") or ""), "image": (c.get("image") or "").split(",")[0] or None,
+        "url": "https://www.magicbricks.com/propertyDetails/" + c["url"],
+    }
+
+
 def parse_project_page(html):
     """Return details from a project page: coordinates, RERA, amenities, towers, unit configs."""
     state = _json_after(html, "window.SERVER_PRELOADED_STATE_") or {}
@@ -161,7 +251,8 @@ def _listing(r):
     except ValueError:
         bhk = None
     return {"bhk": bhk, "price": _num(r.get("price")), "sqft": _num(r.get("caSqFt")), "psf": _num(r.get("sqFtPrice")),
-            "furnished": r.get("furnishedD"), "floor": r.get("floorNo"), "posted": (r.get("postDateT") or "")[:10]}
+            "furnished": r.get("furnishedD"), "floor": r.get("floorNo"), "posted": (r.get("postDateT") or "")[:10],
+            "type": r.get("propTypeD")}
 
 
 RATING_KEYS = {"waterRt": "water", "electricityRt": "power", "backupRt": "power backup", "securityRt": "security",

@@ -1,0 +1,3066 @@
+[
+{
+"reg": "HRERA-PKL-HSR-404-2023",
+"rera": "RERA-PKL-1182-2022",
+"name": "AGROHA ENCLAVE",
+"promoter": "M/S. AGROHA DEVELOPERS AND PROMOTERS",
+"address": "SECTOR - 2, AGROHA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2245",
+"status": "Lapsed Project",
+"project_name": "AGROHA ENCLAVE",
+"site_address": "SECTOR - 2, AGROHA",
+"tehsil": "HISAR",
+"land_acres": 15.31875,
+"plot_acres": 7.9367,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 149.98,
+"count": 7
+},
+{
+"plot_sqm": 110.62,
+"count": 9
+},
+{
+"plot_sqm": 149.81,
+"count": 3
+},
+{
+"plot_sqm": 143.11,
+"count": 39
+},
+{
+"plot_sqm": 123.7,
+"count": 1
+},
+{
+"plot_sqm": 131.41,
+"count": 1
+},
+{
+"plot_sqm": 149.97,
+"count": 1
+},
+{
+"plot_sqm": 146.03,
+"count": 11
+},
+{
+"plot_sqm": 149.88,
+"count": 32
+},
+{
+"plot_sqm": 147.4,
+"count": 76
+},
+{
+"plot_sqm": 143.41,
+"count": 18
+},
+{
+"plot_sqm": 145.95,
+"count": 17
+},
+{
+"plot_sqm": 145.36,
+"count": 1
+},
+{
+"plot_sqm": 139.45,
+"count": 1
+},
+{
+"plot_sqm": 132.25,
+"count": 1
+},
+{
+"plot_sqm": 125.05,
+"count": 1
+},
+{
+"plot_sqm": 117.85,
+"count": 1
+},
+{
+"plot_sqm": 110.65,
+"count": 1
+},
+{
+"plot_sqm": 103.45,
+"count": 1
+},
+{
+"plot_sqm": 96.26,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-12-2025",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-971-2026",
+"rera": "RERA-PKL-2124-2026",
+"name": "AQUA GREEN",
+"promoter": "DEEPTI GUPTA TRADING LLP",
+"address": "VILLAGE HISAR SECTOR 39",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4249",
+"status": null,
+"project_name": "AQUA GREEN",
+"site_address": "VILLAGE HISAR SECTOR 39",
+"tehsil": "HISAR",
+"land_acres": 6.15625,
+"plot_acres": 3.55325,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 101.78,
+"count": 40
+},
+{
+"plot_sqm": 108.08,
+"count": 36
+},
+{
+"plot_sqm": 110.4,
+"count": 38
+},
+{
+"plot_sqm": 142.51,
+"count": 3
+},
+{
+"plot_sqm": 112.17,
+"count": 16
+}
+],
+"apartments": [],
+"completion": "31-12-2030",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-41-2018",
+"rera": "RERA-PKL-586-2019",
+"name": "\"AUTO MARKET HANSI\" ON LAND MEASURING 30.58 ACRES",
+"promoter": "HARYANA SEHRI VIKAS PRADHIKARAN",
+"address": "SECTOR-13 P, HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/677",
+"status": "Lapsed Project",
+"project_name": "AUTO MARKET HANSI",
+"site_address": "DELHI ROAD HANSI",
+"tehsil": "HANSI",
+"land_acres": 123751.83,
+"plot_acres": 7.51,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 30391.63,
+"count": 690
+}
+],
+"apartments": [],
+"completion": "31-12-2019",
+"kind": "commercial"
+},
+{
+"reg": "HRERA-PKL-HSR-968-2026",
+"rera": "RERA-PKL-2125-2026",
+"name": "CAPTAIN RANJIT SINGH ENCLAVE",
+"promoter": "CRSD DEVELOPERS",
+"address": "VILLAGE DABRA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4250",
+"status": null,
+"project_name": "CAPTAIN RANJIT SINGH ENCLAVE",
+"site_address": "VILLAGE DABRA",
+"tehsil": "HISAR",
+"land_acres": 43.85,
+"plot_acres": 28.235,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 456.3,
+"count": 8
+},
+{
+"plot_sqm": 442.53,
+"count": 1
+},
+{
+"plot_sqm": 220.0,
+"count": 82
+},
+{
+"plot_sqm": 371.63,
+"count": 4
+},
+{
+"plot_sqm": 412.92,
+"count": 4
+},
+{
+"plot_sqm": 232.76,
+"count": 4
+},
+{
+"plot_sqm": 166.26,
+"count": 1
+},
+{
+"plot_sqm": 217.54,
+"count": 1
+},
+{
+"plot_sqm": 327.38,
+"count": 12
+},
+{
+"plot_sqm": 329.41,
+"count": 2
+},
+{
+"plot_sqm": 385.39,
+"count": 13
+},
+{
+"plot_sqm": 299.0,
+"count": 14
+},
+{
+"plot_sqm": 313.55,
+"count": 1
+},
+{
+"plot_sqm": 294.73,
+"count": 24
+},
+{
+"plot_sqm": 306.89,
+"count": 3
+},
+{
+"plot_sqm": 304.75,
+"count": 70
+},
+{
+"plot_sqm": 161.12,
+"count": 7
+},
+{
+"plot_sqm": 134.11,
+"count": 47
+},
+{
+"plot_sqm": 128.24,
+"count": 2
+},
+{
+"plot_sqm": 128.8,
+"count": 1
+},
+{
+"plot_sqm": 149.81,
+"count": 74
+},
+{
+"plot_sqm": 146.95,
+"count": 1
+},
+{
+"plot_sqm": 149.87,
+"count": 44
+},
+{
+"plot_sqm": 138.59,
+"count": 1
+},
+{
+"plot_sqm": 138.96,
+"count": 7
+},
+{
+"plot_sqm": 133.77,
+"count": 2
+},
+{
+"plot_sqm": 129.39,
+"count": 38
+},
+{
+"plot_sqm": 122.92,
+"count": 30
+},
+{
+"plot_sqm": 98.58,
+"count": 2
+},
+{
+"plot_sqm": 89.3,
+"count": 15
+},
+{
+"plot_sqm": 158.05,
+"count": 8
+},
+{
+"plot_sqm": 49.96,
+"count": 5
+},
+{
+"plot_sqm": 154.35,
+"count": 6
+},
+{
+"plot_sqm": 27.5,
+"count": 1
+},
+{
+"plot_sqm": 13.75,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "21-04-2031",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-729-2025",
+"rera": "RERA-PKL-1542-2024",
+"name": "CONNAUGHT PLACE",
+"promoter": "M/S AERENS GOLDSOUK PROJECTS HISSAR PVT LTD",
+"address": "SECTOR 25",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3112",
+"status": null,
+"project_name": "CONNAUGHT PLACE",
+"site_address": "SECTOR 25",
+"tehsil": "HISAR",
+"land_acres": 6.075,
+"plot_acres": 0.0,
+"apartment_land_acres": 2.126,
+"plots": [],
+"apartments": [
+{
+"type": "Type SHOP",
+"carpet_sqm": 10.189,
+"count": 4,
+"towers": 1
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 10.659,
+"count": 2,
+"towers": 1
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 10.749,
+"count": 4,
+"towers": 1
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 10.849,
+"count": 26,
+"towers": 1
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 11.309,
+"count": 6,
+"towers": 1
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 11.317,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 11.519,
+"count": 36,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 11.529,
+"count": 34,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 12.059,
+"count": 6,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 16.419,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 16.839,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 17.289,
+"count": 22,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 18.269,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 19.789,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 20.977,
+"count": 26,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.019,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.039,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.359,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.599,
+"count": 20,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.609,
+"count": 44,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.679,
+"count": 6,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 21.689,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 22.339,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 22.349,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 22.909,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 159.488,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 209.138,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 251.747,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 36.89,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 37.1,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 42.97,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 44.77,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 46.66,
+"count": 5,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 50.543,
+"count": 16,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 51.57,
+"count": 4,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 53.37,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 53.99,
+"count": 8,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 60.93,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 68.9,
+"count": 30,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 71.52,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 72.32,
+"count": 8,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 92.65,
+"count": 11,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 113.58,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 121.33,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 173.24,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 185.11,
+"count": 2,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 189.0,
+"count": 1,
+"towers": null
+},
+{
+"type": "Type SHOP",
+"carpet_sqm": 211.911,
+"count": 1,
+"towers": null
+}
+],
+"completion": null,
+"kind": "commercial"
+},
+{
+"reg": "HRERA-PKL-HSR-580-2024",
+"rera": "RERA-PKL-1244-2023",
+"name": "CONST. OF 756 NOS. EWS FLATS SEC-5, HANSI",
+"promoter": "HOUSING BOARD HARYANA",
+"address": "SECTOR 5 HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2398",
+"status": "Lapsed Project",
+"project_name": "CONST. OF 756 NOS. EWS FLATS SEC-5, HANSI",
+"site_address": "SECTOR 5 HANSI",
+"tehsil": "HANSI",
+"land_acres": 18.39,
+"plot_acres": 0.0,
+"apartment_land_acres": 16445.0,
+"plots": [],
+"apartments": [
+{
+"type": "Type EWS",
+"carpet_sqm": 65.0,
+"count": 756,
+"towers": 11
+}
+],
+"completion": null,
+"kind": "apartment"
+},
+{
+"reg": "HRERA-PKL-HSR-784-2025",
+"rera": "RERA-PKL-1807-2025",
+"name": "DIGANTIKA RESIDENCY",
+"promoter": "DIGANTIKA INFRASTRUCTURE LLP",
+"address": "VILLAGE BIR, SECTOR 39, HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3686",
+"status": null,
+"project_name": "DIGANTIKA RESIDENCY",
+"site_address": "VILLAGE BIR, SECTOR 39, HISAR",
+"tehsil": "HISAR",
+"land_acres": 9.85,
+"plot_acres": 5.2739,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 144.02,
+"count": 10
+},
+{
+"plot_sqm": 141.18,
+"count": 7
+},
+{
+"plot_sqm": 141.96,
+"count": 26
+},
+{
+"plot_sqm": 130.22,
+"count": 1
+},
+{
+"plot_sqm": 149.88,
+"count": 56
+},
+{
+"plot_sqm": 143.9,
+"count": 6
+},
+{
+"plot_sqm": 147.74,
+"count": 32
+},
+{
+"plot_sqm": 139.17,
+"count": 7
+},
+{
+"plot_sqm": 134.51,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "21-08-2030",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-1015-2026",
+"rera": "RERA-PKL-2193-2026",
+"name": "DL RESIDENCY",
+"promoter": "SSK DEVELOPERS",
+"address": "VILLAGE MIRZAPUR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4369",
+"status": null,
+"project_name": "DL RESIDENCY",
+"site_address": "VILLAGE MIRZAPUR",
+"tehsil": "HISAR",
+"land_acres": 23.43125,
+"plot_acres": 14.9958,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 383.79,
+"count": 5
+},
+{
+"plot_sqm": 300.85,
+"count": 2
+},
+{
+"plot_sqm": 275.49,
+"count": 12
+},
+{
+"plot_sqm": 266.69,
+"count": 48
+},
+{
+"plot_sqm": 677.0,
+"count": 5
+},
+{
+"plot_sqm": 668.67,
+"count": 1
+},
+{
+"plot_sqm": 6829.34,
+"count": 1
+},
+{
+"plot_sqm": 324.98,
+"count": 8
+},
+{
+"plot_sqm": 334.24,
+"count": 1
+},
+{
+"plot_sqm": 275.49,
+"count": 13
+},
+{
+"plot_sqm": 288.81,
+"count": 1
+},
+{
+"plot_sqm": 6355.19,
+"count": 1
+},
+{
+"plot_sqm": 74.42,
+"count": 48
+},
+{
+"plot_sqm": 137.82,
+"count": 39
+},
+{
+"plot_sqm": 100.36,
+"count": 45
+},
+{
+"plot_sqm": 136.25,
+"count": 2
+},
+{
+"plot_sqm": 95.97,
+"count": 15
+},
+{
+"plot_sqm": 100.43,
+"count": 13
+},
+{
+"plot_sqm": 118.07,
+"count": 13
+}
+],
+"apartments": [],
+"completion": "03-08-2031",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-581-2024",
+"rera": "RERA-PKL-1420-2024",
+"name": "GOKUL DHAM",
+"promoter": "MAA BHAGWATI ASSOCIATES",
+"address": "VILLAGE - DHANA, SECTOR -1 HA NSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2801",
+"status": null,
+"project_name": "GOKUL DHAM",
+"site_address": "VILLAGE - DHANA, SECTOR -1 HANSI",
+"tehsil": "HANSI",
+"land_acres": 36.6125,
+"plot_acres": 18.7718,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 132.3,
+"count": 10
+},
+{
+"plot_sqm": 115.22,
+"count": 10
+},
+{
+"plot_sqm": 142.13,
+"count": 46
+},
+{
+"plot_sqm": 123.78,
+"count": 46
+},
+{
+"plot_sqm": 75.46,
+"count": 20
+},
+{
+"plot_sqm": 81.57,
+"count": 14
+},
+{
+"plot_sqm": 80.2,
+"count": 7
+},
+{
+"plot_sqm": 81.73,
+"count": 15
+},
+{
+"plot_sqm": 87.95,
+"count": 60
+},
+{
+"plot_sqm": 106.98,
+"count": 34
+},
+{
+"plot_sqm": 90.89,
+"count": 10
+},
+{
+"plot_sqm": 139.91,
+"count": 9
+},
+{
+"plot_sqm": 137.76,
+"count": 14
+},
+{
+"plot_sqm": 111.56,
+"count": 14
+},
+{
+"plot_sqm": 106.33,
+"count": 5
+},
+{
+"plot_sqm": 111.19,
+"count": 3
+},
+{
+"plot_sqm": 95.55,
+"count": 7
+},
+{
+"plot_sqm": 125.54,
+"count": 9
+},
+{
+"plot_sqm": 126.29,
+"count": 28
+},
+{
+"plot_sqm": 131.69,
+"count": 28
+},
+{
+"plot_sqm": 110.45,
+"count": 18
+},
+{
+"plot_sqm": 109.63,
+"count": 4
+},
+{
+"plot_sqm": 134.56,
+"count": 15
+},
+{
+"plot_sqm": 108.97,
+"count": 15
+},
+{
+"plot_sqm": 136.26,
+"count": 6
+},
+{
+"plot_sqm": 113.57,
+"count": 17
+},
+{
+"plot_sqm": 120.64,
+"count": 6
+},
+{
+"plot_sqm": 118.52,
+"count": 32
+},
+{
+"plot_sqm": 94.41,
+"count": 6
+},
+{
+"plot_sqm": 133.88,
+"count": 46
+},
+{
+"plot_sqm": 115.95,
+"count": 5
+},
+{
+"plot_sqm": 137.35,
+"count": 12
+},
+{
+"plot_sqm": 121.26,
+"count": 12
+},
+{
+"plot_sqm": 90.78,
+"count": 7
+},
+{
+"plot_sqm": 149.25,
+"count": 34
+},
+{
+"plot_sqm": 109.95,
+"count": 11
+},
+{
+"plot_sqm": 92.5,
+"count": 7
+},
+{
+"plot_sqm": 148.8,
+"count": 7
+}
+],
+"apartments": [],
+"completion": "31-03-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-856-2026",
+"rera": "RERA-PKL-1888-2025",
+"name": "GOKUL DHAM PHASE II",
+"promoter": "MAA BHAGWATI ASSOCIATES",
+"address": "VILLAGE DHANA, SECTOR 1",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3847",
+"status": null,
+"project_name": "GOKUL DHAM PHASE II",
+"site_address": "VILLAGE DHANA, SECTOR 1",
+"tehsil": "HANSI",
+"land_acres": 8.593,
+"plot_acres": 4.425,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 99.33,
+"count": 1
+},
+{
+"plot_sqm": 95.54,
+"count": 19
+},
+{
+"plot_sqm": 114.54,
+"count": 10
+},
+{
+"plot_sqm": 138.06,
+"count": 2
+},
+{
+"plot_sqm": 138.61,
+"count": 18
+},
+{
+"plot_sqm": 85.77,
+"count": 3
+},
+{
+"plot_sqm": 89.65,
+"count": 1
+},
+{
+"plot_sqm": 88.32,
+"count": 10
+},
+{
+"plot_sqm": 134.72,
+"count": 28
+},
+{
+"plot_sqm": 102.45,
+"count": 1
+},
+{
+"plot_sqm": 103.07,
+"count": 8
+},
+{
+"plot_sqm": 93.7,
+"count": 4
+},
+{
+"plot_sqm": 99.69,
+"count": 1
+},
+{
+"plot_sqm": 104.75,
+"count": 1
+},
+{
+"plot_sqm": 98.45,
+"count": 4
+},
+{
+"plot_sqm": 106.83,
+"count": 8
+},
+{
+"plot_sqm": 145.97,
+"count": 1
+},
+{
+"plot_sqm": 134.79,
+"count": 32
+}
+],
+"apartments": [],
+"completion": "30-06-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-820-2026",
+"rera": "RERA-PKL-1840-2025",
+"name": "GREEN CITY PHASE II",
+"promoter": "VISHVADHARAM ESTATE LLP",
+"address": "VILLAGE BIR SECTOR 39",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3753",
+"status": null,
+"project_name": "GREEN CITY PHASE II",
+"site_address": "VILLAGE BIR SECTOR 39",
+"tehsil": "HISAR",
+"land_acres": 17.2875,
+"plot_acres": 9.8763,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 108.42,
+"count": 35
+},
+{
+"plot_sqm": 109.4,
+"count": 17
+},
+{
+"plot_sqm": 112.53,
+"count": 18
+},
+{
+"plot_sqm": 134.32,
+"count": 5
+},
+{
+"plot_sqm": 143.64,
+"count": 110
+},
+{
+"plot_sqm": 95.93,
+"count": 94
+},
+{
+"plot_sqm": 144.77,
+"count": 22
+},
+{
+"plot_sqm": 112.94,
+"count": 32
+}
+],
+"apartments": [],
+"completion": "17-09-2030",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-316-2022",
+"rera": "RERA-PKL-1011-2022",
+"name": "GREEN ENCLAVE",
+"promoter": "M/S VAIBHAVLAXMI ASSOCIATES",
+"address": "RAILWAY ROAD, OPP. HUKAM CHAN D PARK SECTOR 9,HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/1844",
+"status": null,
+"project_name": "GREEN ENCLAVE",
+"site_address": "RAILWAY ROAD, OPP. HUKAM CHAND PARK SECTOR 9,HANSI",
+"tehsil": "HANSI",
+"land_acres": 5.05625,
+"plot_acres": 2.734,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 117.17,
+"count": 7
+},
+{
+"plot_sqm": 97.99,
+"count": 1
+},
+{
+"plot_sqm": 139.29,
+"count": 1
+},
+{
+"plot_sqm": 141.73,
+"count": 14
+},
+{
+"plot_sqm": 813.03,
+"count": 1
+},
+{
+"plot_sqm": 128.98,
+"count": 7
+},
+{
+"plot_sqm": 128.72,
+"count": 1
+},
+{
+"plot_sqm": 136.79,
+"count": 1
+},
+{
+"plot_sqm": 132.68,
+"count": 1
+},
+{
+"plot_sqm": 133.38,
+"count": 10
+},
+{
+"plot_sqm": 107.48,
+"count": 9
+},
+{
+"plot_sqm": 103.95,
+"count": 18
+},
+{
+"plot_sqm": 123.73,
+"count": 2
+},
+{
+"plot_sqm": 124.08,
+"count": 14
+},
+{
+"plot_sqm": 141.56,
+"count": 4
+}
+],
+"apartments": [],
+"completion": "23-12-2026",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-514-2023",
+"rera": "RERA-PKL-1274-2023",
+"name": "INDRAVATI ENCLAVE",
+"promoter": "RAJESH LAMBA",
+"address": "VILLAGE SHEKHPURA, SECTOR-4, HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2461",
+"status": null,
+"project_name": "INDRAVATI ENCLAVE",
+"site_address": "VILLAGE SHEKHPURA, SECTOR-4, HANSI",
+"tehsil": "HANSI",
+"land_acres": 16.39375,
+"plot_acres": 7.751,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 139.11,
+"count": 30
+},
+{
+"plot_sqm": 125.21,
+"count": 18
+},
+{
+"plot_sqm": 124.38,
+"count": 7
+},
+{
+"plot_sqm": 140.87,
+"count": 18
+},
+{
+"plot_sqm": 128.99,
+"count": 16
+},
+{
+"plot_sqm": 120.72,
+"count": 12
+},
+{
+"plot_sqm": 144.72,
+"count": 16
+},
+{
+"plot_sqm": 149.53,
+"count": 16
+},
+{
+"plot_sqm": 147.82,
+"count": 20
+},
+{
+"plot_sqm": 146.88,
+"count": 29
+},
+{
+"plot_sqm": 141.84,
+"count": 22
+},
+{
+"plot_sqm": 135.82,
+"count": 15
+},
+{
+"plot_sqm": 134.4,
+"count": 7
+},
+{
+"plot_sqm": 2545.0,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-12-2027",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-492-2023",
+"rera": "RERA-PKL-1272-2023",
+"name": "MKS UDYOG CITY",
+"promoter": "MKS ENTERPRISES",
+"address": "BEER, BAGLA ROAD, HISAR, HARY ANA - 125001",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2455",
+"status": null,
+"project_name": "MKS UDYOG CITY",
+"site_address": "BEER, BAGLA ROAD, HISAR, HARYANA - 125001",
+"tehsil": "HISAR",
+"land_acres": 15.4375,
+"plot_acres": 9.6915,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 1348.38,
+"count": 2
+},
+{
+"plot_sqm": 1349.72,
+"count": 1
+},
+{
+"plot_sqm": 452.86,
+"count": 6
+},
+{
+"plot_sqm": 453.4,
+"count": 1
+},
+{
+"plot_sqm": 347.88,
+"count": 4
+},
+{
+"plot_sqm": 418.13,
+"count": 45
+},
+{
+"plot_sqm": 627.2,
+"count": 7
+},
+{
+"plot_sqm": 628.02,
+"count": 1
+},
+{
+"plot_sqm": 418.2,
+"count": 15
+},
+{
+"plot_sqm": 504.41,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-03-2027",
+"kind": "commercial"
+},
+{
+"reg": "HRERA-PKL-HSR-625-2024",
+"rera": "RERA-PKL-1539-2024",
+"name": "OM ESTATES",
+"promoter": "OM ESTATES",
+"address": "VILLAGE HISAR, NH-9, HISAR DE LHI BYE PASS ROAD",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3105",
+"status": "images/project_completed.jpg\" > -->",
+"project_name": "OM ESTATES",
+"site_address": "VILLAGE HISAR, NH-9, HISAR DELHI BYE PASS ROAD",
+"tehsil": "HISAR",
+"land_acres": 19.725,
+"plot_acres": 11.462,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 529.68,
+"count": 4
+},
+{
+"plot_sqm": 539.98,
+"count": 2
+},
+{
+"plot_sqm": 303.28,
+"count": 7
+},
+{
+"plot_sqm": 337.61,
+"count": 1
+},
+{
+"plot_sqm": 528.49,
+"count": 3
+},
+{
+"plot_sqm": 529.6,
+"count": 1
+},
+{
+"plot_sqm": 339.16,
+"count": 7
+},
+{
+"plot_sqm": 328.6,
+"count": 1
+},
+{
+"plot_sqm": 394.95,
+"count": 4
+},
+{
+"plot_sqm": 397.64,
+"count": 1
+},
+{
+"plot_sqm": 228.05,
+"count": 1
+},
+{
+"plot_sqm": 364.39,
+"count": 14
+},
+{
+"plot_sqm": 295.94,
+"count": 5
+},
+{
+"plot_sqm": 354.18,
+"count": 1
+},
+{
+"plot_sqm": 485.7,
+"count": 4
+},
+{
+"plot_sqm": 503.09,
+"count": 1
+},
+{
+"plot_sqm": 325.0,
+"count": 36
+},
+{
+"plot_sqm": 333.06,
+"count": 4
+},
+{
+"plot_sqm": 63.31,
+"count": 7
+},
+{
+"plot_sqm": 128.07,
+"count": 9
+},
+{
+"plot_sqm": 144.25,
+"count": 1
+},
+{
+"plot_sqm": 148.43,
+"count": 4
+},
+{
+"plot_sqm": 143.04,
+"count": 11
+},
+{
+"plot_sqm": 134.7,
+"count": 1
+},
+{
+"plot_sqm": 128.96,
+"count": 4
+},
+{
+"plot_sqm": 133.27,
+"count": 1
+},
+{
+"plot_sqm": 129.93,
+"count": 16
+},
+{
+"plot_sqm": 134.27,
+"count": 4
+},
+{
+"plot_sqm": 149.97,
+"count": 9
+},
+{
+"plot_sqm": 146.35,
+"count": 17
+},
+{
+"plot_sqm": 144.13,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "13-08-2029",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-455-2023",
+"rera": "RERA-PKL-1273-2023",
+"name": "PARK AVENUE",
+"promoter": "PARK CITY DEVELOPERS",
+"address": "VILLAHE - DHANA, SECTOR - 1, HANSI, DISTRICT - HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2459",
+"status": null,
+"project_name": "PARK AVENUE",
+"site_address": "VILLAHE - DHANA, SECTOR - 1, HANSI, DISTRICT - HISAR",
+"tehsil": "HANSI",
+"land_acres": 7.375,
+"plot_acres": 4.0556,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 146.29,
+"count": 52
+},
+{
+"plot_sqm": 149.01,
+"count": 4
+},
+{
+"plot_sqm": 150.0,
+"count": 7
+},
+{
+"plot_sqm": 122.55,
+"count": 9
+},
+{
+"plot_sqm": 135.22,
+"count": 30
+},
+{
+"plot_sqm": 121.7,
+"count": 8
+},
+{
+"plot_sqm": 93.3,
+"count": 11
+}
+],
+"apartments": [],
+"completion": "31-03-2027",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-1005-2026",
+"rera": "RERA-PKL-2163-2026",
+"name": "PINK CITY",
+"promoter": "M/S VASUDHA ASSOCIATES",
+"address": "VILLAGE HANSI & DHANA, SECTOR - 2",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4311",
+"status": null,
+"project_name": "PINK CITY",
+"site_address": "VILLAGE HANSI & DHANA, SECTOR - 2",
+"tehsil": "HANSI",
+"land_acres": 20.6375,
+"plot_acres": 10.5249,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 149.85,
+"count": 5
+},
+{
+"plot_sqm": 148.95,
+"count": 1
+},
+{
+"plot_sqm": 109.64,
+"count": 10
+},
+{
+"plot_sqm": 101.35,
+"count": 1
+},
+{
+"plot_sqm": 107.31,
+"count": 18
+},
+{
+"plot_sqm": 107.09,
+"count": 18
+},
+{
+"plot_sqm": 114.75,
+"count": 12
+},
+{
+"plot_sqm": 116.63,
+"count": 4
+},
+{
+"plot_sqm": 133.57,
+"count": 24
+},
+{
+"plot_sqm": 133.76,
+"count": 1
+},
+{
+"plot_sqm": 114.31,
+"count": 2
+},
+{
+"plot_sqm": 149.94,
+"count": 5
+},
+{
+"plot_sqm": 149.57,
+"count": 1
+},
+{
+"plot_sqm": 98.6,
+"count": 7
+},
+{
+"plot_sqm": 103.05,
+"count": 1
+},
+{
+"plot_sqm": 137.83,
+"count": 14
+},
+{
+"plot_sqm": 120.32,
+"count": 5
+},
+{
+"plot_sqm": 132.8,
+"count": 1
+},
+{
+"plot_sqm": 111.67,
+"count": 8
+},
+{
+"plot_sqm": 111.97,
+"count": 2
+},
+{
+"plot_sqm": 104.9,
+"count": 17
+},
+{
+"plot_sqm": 111.2,
+"count": 1
+},
+{
+"plot_sqm": 84.91,
+"count": 9
+},
+{
+"plot_sqm": 84.46,
+"count": 1
+},
+{
+"plot_sqm": 74.74,
+"count": 1
+},
+{
+"plot_sqm": 108.51,
+"count": 37
+},
+{
+"plot_sqm": 135.09,
+"count": 1
+},
+{
+"plot_sqm": 85.15,
+"count": 5
+},
+{
+"plot_sqm": 86.45,
+"count": 1
+},
+{
+"plot_sqm": 84.62,
+"count": 10
+},
+{
+"plot_sqm": 85.91,
+"count": 2
+},
+{
+"plot_sqm": 120.49,
+"count": 98
+},
+{
+"plot_sqm": 118.84,
+"count": 4
+},
+{
+"plot_sqm": 84.91,
+"count": 20
+},
+{
+"plot_sqm": 83.94,
+"count": 2
+},
+{
+"plot_sqm": 133.83,
+"count": 5
+},
+{
+"plot_sqm": 133.48,
+"count": 1
+},
+{
+"plot_sqm": 135.42,
+"count": 16
+},
+{
+"plot_sqm": 135.29,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "09-08-2031",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-168-2019",
+"rera": "RERA-PKL-720-2019",
+"name": "RAJDARBAR SPACES",
+"promoter": "RAJDARBAR BUILDCON PVT. LTD.",
+"address": "SECTOR - 24, HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/868",
+"status": "Lapsed Project",
+"project_name": "RAJDARBAR SPACES",
+"site_address": "SECTOR - 24, HISAR",
+"tehsil": "HISAR",
+"land_acres": 11.64375,
+"plot_acres": 5.415,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 21912.46,
+"count": 207
+}
+],
+"apartments": [],
+"completion": "01-12-2023",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-87-2019",
+"rera": "RERA-PKL-324-2018",
+"name": "RAJDARBAR SPACES",
+"promoter": "RAJDARBAR BUILDCON PRIVATE LIMITED FORMERLY KNOWN AS DAFFODIL BUILDCON PRIVATE LIMITED",
+"address": "SECTOR 24 HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/221",
+"status": "Lapsed Project",
+"project_name": "RAJDARBAR SPACES",
+"site_address": "SECTOR 24 HISAR",
+"tehsil": "HISAR",
+"land_acres": 6.65625,
+"plot_acres": 3.8686,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 74.11,
+"count": 30
+},
+{
+"plot_sqm": 83.65,
+"count": 10
+},
+{
+"plot_sqm": 69.28,
+"count": 20
+},
+{
+"plot_sqm": 56.22,
+"count": 27
+},
+{
+"plot_sqm": 50.57,
+"count": 6
+},
+{
+"plot_sqm": 141.93,
+"count": 23
+},
+{
+"plot_sqm": 114.82,
+"count": 1
+},
+{
+"plot_sqm": 131.95,
+"count": 8
+},
+{
+"plot_sqm": 112.21,
+"count": 5
+},
+{
+"plot_sqm": 135.6,
+"count": 17
+},
+{
+"plot_sqm": 133.49,
+"count": 8
+}
+],
+"apartments": [],
+"completion": "01-11-2021",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-638-2024",
+"rera": "RERA-PKL-1534-2024",
+"name": "RAJDARBAR SPACES",
+"promoter": "RAJDARBAR BUILDCON PRIVATE LIMITED",
+"address": "SECTOR 24",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3097",
+"status": "Lapsed Project",
+"project_name": "RAJDARBAR SPACES",
+"site_address": "SECTOR 24",
+"tehsil": "HISAR",
+"land_acres": 12.0875,
+"plot_acres": 5.90379,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 105.26,
+"count": 49
+},
+{
+"plot_sqm": 126.87,
+"count": 7
+},
+{
+"plot_sqm": 123.73,
+"count": 9
+},
+{
+"plot_sqm": 107.94,
+"count": 36
+},
+{
+"plot_sqm": 144.41,
+"count": 24
+},
+{
+"plot_sqm": 107.53,
+"count": 24
+},
+{
+"plot_sqm": 102.4,
+"count": 1
+},
+{
+"plot_sqm": 106.69,
+"count": 1
+},
+{
+"plot_sqm": 113.62,
+"count": 1
+},
+{
+"plot_sqm": 147.54,
+"count": 5
+},
+{
+"plot_sqm": 93.56,
+"count": 2
+},
+{
+"plot_sqm": 132.39,
+"count": 10
+},
+{
+"plot_sqm": 127.92,
+"count": 12
+},
+{
+"plot_sqm": 110.5,
+"count": 1
+},
+{
+"plot_sqm": 127.88,
+"count": 1
+},
+{
+"plot_sqm": 127.67,
+"count": 1
+},
+{
+"plot_sqm": 127.47,
+"count": 1
+},
+{
+"plot_sqm": 127.26,
+"count": 1
+},
+{
+"plot_sqm": 127.05,
+"count": 1
+},
+{
+"plot_sqm": 126.84,
+"count": 1
+},
+{
+"plot_sqm": 126.64,
+"count": 1
+},
+{
+"plot_sqm": 126.43,
+"count": 1
+},
+{
+"plot_sqm": 126.22,
+"count": 1
+},
+{
+"plot_sqm": 126.02,
+"count": 1
+},
+{
+"plot_sqm": 125.81,
+"count": 1
+},
+{
+"plot_sqm": 125.6,
+"count": 1
+},
+{
+"plot_sqm": 125.4,
+"count": 1
+},
+{
+"plot_sqm": 125.19,
+"count": 1
+},
+{
+"plot_sqm": 124.98,
+"count": 1
+},
+{
+"plot_sqm": 124.78,
+"count": 1
+},
+{
+"plot_sqm": 124.57,
+"count": 1
+},
+{
+"plot_sqm": 125.82,
+"count": 1
+},
+{
+"plot_sqm": 125.66,
+"count": 1
+},
+{
+"plot_sqm": 125.51,
+"count": 1
+},
+{
+"plot_sqm": 125.35,
+"count": 1
+},
+{
+"plot_sqm": 125.2,
+"count": 1
+},
+{
+"plot_sqm": 124.38,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "30-09-2025",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-860-2026",
+"rera": "RERA-PKL-1893-2025",
+"name": "RAMESHWARAM GREENS",
+"promoter": "GIRDHAR GOPAL BUILDER AND DEVELOPER LLP",
+"address": "VILLAGE BUDHA KHERA SECTOR-3, UKLANA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3852",
+"status": null,
+"project_name": "RAMESHWARAM GREENS",
+"site_address": "VILLAGE BUDHA KHERA SECTOR-3, UKLANA",
+"tehsil": "HISAR",
+"land_acres": 9.1833,
+"plot_acres": 4.6552,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 146.48,
+"count": 8
+},
+{
+"plot_sqm": 132.97,
+"count": 1
+},
+{
+"plot_sqm": 136.62,
+"count": 21
+},
+{
+"plot_sqm": 142.79,
+"count": 3
+},
+{
+"plot_sqm": 144.38,
+"count": 2
+},
+{
+"plot_sqm": 125.69,
+"count": 28
+},
+{
+"plot_sqm": 121.65,
+"count": 18
+},
+{
+"plot_sqm": 129.78,
+"count": 1
+},
+{
+"plot_sqm": 134.0,
+"count": 14
+},
+{
+"plot_sqm": 140.05,
+"count": 2
+},
+{
+"plot_sqm": 129.42,
+"count": 46
+}
+],
+"apartments": [],
+"completion": "18-11-2030",
+"kind": "plot"
+},
+{
+"reg": "295",
+"rera": "RERA-PKL-841-2020",
+"name": "REGENCY PARK",
+"promoter": "AARCITY BUILDERS PVT. LTD.",
+"address": "VILLAGE SATROD KHURD , SECTOR 11A & 17,TEHSIL & DISTRICT HISAR, HARYANA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/1344",
+"status": "OF 2017 DATED 13.10.2017",
+"project_name": "REGENCY PARK",
+"site_address": "VILLAGE SATROD KHURD, SEC 11A & 17, DELHI HISAR ROAD, HISAR",
+"tehsil": "HISAR",
+"land_acres": 12.081,
+"plot_acres": 0.0,
+"apartment_land_acres": 7.118,
+"plots": [],
+"apartments": [
+{
+"type": "Type 1",
+"carpet_sqm": 61.269,
+"count": 187,
+"towers": 2
+},
+{
+"type": "Type 2",
+"carpet_sqm": 76.158,
+"count": 184,
+"towers": 2
+},
+{
+"type": "Type 3",
+"carpet_sqm": 100.511,
+"count": 160,
+"towers": 3
+},
+{
+"type": "Type 4",
+"carpet_sqm": 135.527,
+"count": 72,
+"towers": 1
+},
+{
+"type": "Type 5",
+"carpet_sqm": 137.069,
+"count": 36,
+"towers": 1
+},
+{
+"type": "Type 6",
+"carpet_sqm": 15.924,
+"count": 120,
+"towers": 1
+}
+],
+"completion": null,
+"kind": "apartment"
+},
+{
+"reg": "HRERA-PKL-HSR-962-2026",
+"rera": "RERA-PKL-2073-2026",
+"name": "ROYAL CITY",
+"promoter": "SIDHI VINAYAK ASSOCIATES",
+"address": "VILLAGE HANSI HISAR DELHI BYE PASS ROAD HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4150",
+"status": null,
+"project_name": "ROYAL CITY",
+"site_address": "VILLAGE HANSI HISAR DELHI BYE PASS ROAD HANSI",
+"tehsil": "HANSI",
+"land_acres": 28.29375,
+"plot_acres": 17.654,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 1034.51,
+"count": 3
+},
+{
+"plot_sqm": 1040.68,
+"count": 1
+},
+{
+"plot_sqm": 277.56,
+"count": 5
+},
+{
+"plot_sqm": 277.28,
+"count": 1
+},
+{
+"plot_sqm": 276.48,
+"count": 4
+},
+{
+"plot_sqm": 276.75,
+"count": 20
+},
+{
+"plot_sqm": 262.29,
+"count": 44
+},
+{
+"plot_sqm": 501.27,
+"count": 25
+},
+{
+"plot_sqm": 267.6,
+"count": 2
+},
+{
+"plot_sqm": 423.75,
+"count": 3
+},
+{
+"plot_sqm": 423.4,
+"count": 1
+},
+{
+"plot_sqm": 407.36,
+"count": 1
+},
+{
+"plot_sqm": 268.32,
+"count": 10
+},
+{
+"plot_sqm": 483.69,
+"count": 6
+},
+{
+"plot_sqm": 486.26,
+"count": 1
+},
+{
+"plot_sqm": 147.86,
+"count": 26
+},
+{
+"plot_sqm": 136.66,
+"count": 8
+},
+{
+"plot_sqm": 133.68,
+"count": 1
+},
+{
+"plot_sqm": 148.78,
+"count": 12
+},
+{
+"plot_sqm": 114.67,
+"count": 9
+},
+{
+"plot_sqm": 130.53,
+"count": 18
+},
+{
+"plot_sqm": 83.74,
+"count": 8
+},
+{
+"plot_sqm": 78.02,
+"count": 1
+},
+{
+"plot_sqm": 83.74,
+"count": 5
+},
+{
+"plot_sqm": 102.04,
+"count": 5
+},
+{
+"plot_sqm": 98.97,
+"count": 5
+},
+{
+"plot_sqm": 123.08,
+"count": 2
+},
+{
+"plot_sqm": 137.92,
+"count": 12
+},
+{
+"plot_sqm": 148.6,
+"count": 1
+},
+{
+"plot_sqm": 117.06,
+"count": 1
+},
+{
+"plot_sqm": 104.75,
+"count": 6
+},
+{
+"plot_sqm": 138.25,
+"count": 1
+},
+{
+"plot_sqm": 149.99,
+"count": 7
+},
+{
+"plot_sqm": 102.63,
+"count": 20
+},
+{
+"plot_sqm": 149.98,
+"count": 6
+},
+{
+"plot_sqm": 5651.07,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-03-2030",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-734-2025",
+"rera": "RERA-PKL-1716-2025",
+"name": "ROYAL CITY BARWALA",
+"promoter": "BABA JODH DEVELOPERS LLP",
+"address": "SECTOR - 5, BARWALA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3511",
+"status": null,
+"project_name": "ROYAL CITY BARWALA",
+"site_address": "SECTOR - 5, BARWALA",
+"tehsil": "BARWALA",
+"land_acres": 5.66875,
+"plot_acres": 3.063,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 96.0,
+"count": 17
+},
+{
+"plot_sqm": 140.02,
+"count": 8
+},
+{
+"plot_sqm": 115.67,
+"count": 34
+},
+{
+"plot_sqm": 145.04,
+"count": 5
+},
+{
+"plot_sqm": 119.63,
+"count": 2
+},
+{
+"plot_sqm": 114.72,
+"count": 11
+},
+{
+"plot_sqm": 117.71,
+"count": 11
+},
+{
+"plot_sqm": 128.79,
+"count": 17
+}
+],
+"apartments": [],
+"completion": "30-06-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-265-2021",
+"rera": "RERA-PKL-956-2021",
+"name": "ROYAL ENCLAVE",
+"promoter": "TULSI TUBES LIMITED",
+"address": "SECTOR - 38, HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/1698",
+"status": "Lapsed Project",
+"project_name": "ROYAL ENCLAVE",
+"site_address": "SECTOR - 38, HISAR",
+"tehsil": "HISAR",
+"land_acres": 9.43125,
+"plot_acres": 5.6262,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 138.64,
+"count": 28
+},
+{
+"plot_sqm": 145.69,
+"count": 28
+},
+{
+"plot_sqm": 139.27,
+"count": 4
+},
+{
+"plot_sqm": 134.73,
+"count": 28
+},
+{
+"plot_sqm": 134.57,
+"count": 56
+},
+{
+"plot_sqm": 136.88,
+"count": 9
+},
+{
+"plot_sqm": 142.5,
+"count": 12
+}
+],
+"apartments": [],
+"completion": "31-12-2023",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-125-2019",
+"rera": "RERA-PKL-574-2019",
+"name": "SECTOR 24 RAIPUR ROAD HISAR",
+"promoter": "GULAB SINGH GREWAL",
+"address": "SECTOR 24 RAIPUR ROAD, HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/659",
+"status": "Lapsed Project",
+"project_name": "SECTOR 24 RAIPUR ROAD HISAR",
+"site_address": "SECTOR 24 RAIPUR ROAD, HISAR",
+"tehsil": "HISAR",
+"land_acres": 31.65,
+"plot_acres": 8.35,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 34627.0,
+"count": 226
+}
+],
+"apartments": [],
+"completion": "31-12-2020",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-587-2024",
+"rera": "RERA-PKL-1439-2024",
+"name": "SHREE KRISHNA ENCLAVE",
+"promoter": "SIDHI VINAYAK ASSOCIATES",
+"address": "SECTOR - 1, HANSI, VILLAGE - DHANA",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2853",
+"status": null,
+"project_name": "SHREE KRISHNA ENCLAVE",
+"site_address": "SECTOR - 1, HANSI, VILLAGE - DHANA",
+"tehsil": "HANSI",
+"land_acres": 7.91875,
+"plot_acres": 4.4356,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 143.28,
+"count": 16
+},
+{
+"plot_sqm": 135.32,
+"count": 16
+},
+{
+"plot_sqm": 127.06,
+"count": 22
+},
+{
+"plot_sqm": 121.31,
+"count": 34
+},
+{
+"plot_sqm": 130.42,
+"count": 4
+},
+{
+"plot_sqm": 141.64,
+"count": 8
+},
+{
+"plot_sqm": 149.18,
+"count": 11
+},
+{
+"plot_sqm": 135.71,
+"count": 3
+},
+{
+"plot_sqm": 117.94,
+"count": 12
+},
+{
+"plot_sqm": 87.48,
+"count": 4
+},
+{
+"plot_sqm": 98.82,
+"count": 4
+},
+{
+"plot_sqm": 98.17,
+"count": 6
+},
+{
+"plot_sqm": 120.37,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-03-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-359-2022",
+"rera": "RERA-PKL-1101-2022",
+"name": "THE GREEN CITY",
+"promoter": "THE OPAL DEVELOPERS AND CONSTRUCTION PVT. LTD.",
+"address": "SECTOR -2, HNASI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/2055",
+"status": null,
+"project_name": "THE GREEN CITY",
+"site_address": "SECTOR -2, HNASI",
+"tehsil": "HANSI",
+"land_acres": 13.2,
+"plot_acres": 7.599,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 139.75,
+"count": 12
+},
+{
+"plot_sqm": 133.74,
+"count": 26
+},
+{
+"plot_sqm": 141.71,
+"count": 38
+},
+{
+"plot_sqm": 130.64,
+"count": 16
+},
+{
+"plot_sqm": 143.4,
+"count": 13
+},
+{
+"plot_sqm": 134.92,
+"count": 7
+},
+{
+"plot_sqm": 138.81,
+"count": 14
+},
+{
+"plot_sqm": 126.13,
+"count": 4
+},
+{
+"plot_sqm": 142.28,
+"count": 14
+},
+{
+"plot_sqm": 122.16,
+"count": 28
+},
+{
+"plot_sqm": 142.6,
+"count": 6
+},
+{
+"plot_sqm": 143.31,
+"count": 18
+},
+{
+"plot_sqm": 145.06,
+"count": 15
+},
+{
+"plot_sqm": 102.03,
+"count": 8
+},
+{
+"plot_sqm": 147.87,
+"count": 6
+},
+{
+"plot_sqm": 141.87,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-12-2024",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-660-2025",
+"rera": "RERA-PKL-1577-2024",
+"name": "THE GREEN CITY",
+"promoter": "OPAL DEVELOPERS AND CONSTRUCTION PVT. LTD.",
+"address": "SECTOR - 2, HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3216",
+"status": null,
+"project_name": "THE GREEN CITY",
+"site_address": "SECTOR - 2, HANSI",
+"tehsil": "HANSI",
+"land_acres": 9.72,
+"plot_acres": 4.8095,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 103.74,
+"count": 6
+},
+{
+"plot_sqm": 149.92,
+"count": 6
+},
+{
+"plot_sqm": 136.17,
+"count": 1
+},
+{
+"plot_sqm": 136.85,
+"count": 8
+},
+{
+"plot_sqm": 107.78,
+"count": 3
+},
+{
+"plot_sqm": 106.38,
+"count": 3
+},
+{
+"plot_sqm": 132.41,
+"count": 15
+},
+{
+"plot_sqm": 131.33,
+"count": 1
+},
+{
+"plot_sqm": 107.94,
+"count": 3
+},
+{
+"plot_sqm": 111.46,
+"count": 11
+},
+{
+"plot_sqm": 75.5,
+"count": 14
+},
+{
+"plot_sqm": 112.8,
+"count": 12
+},
+{
+"plot_sqm": 124.64,
+"count": 22
+},
+{
+"plot_sqm": 134.93,
+"count": 4
+},
+{
+"plot_sqm": 132.98,
+"count": 4
+},
+{
+"plot_sqm": 135.0,
+"count": 8
+},
+{
+"plot_sqm": 128.34,
+"count": 1
+},
+{
+"plot_sqm": 128.88,
+"count": 14
+},
+{
+"plot_sqm": 133.2,
+"count": 6
+},
+{
+"plot_sqm": 79.02,
+"count": 20
+},
+{
+"plot_sqm": 87.22,
+"count": 9
+}
+],
+"apartments": [],
+"completion": "31-03-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-838-2026",
+"rera": "RERA-PKL-1885-2025",
+"name": "TIRUPATI BALAJI UDYOG VIHAR",
+"promoter": "SAHIL VERMA",
+"address": "VILLAGE RAMAYAN, NEAR DPS SCH OOL ,NH-9 HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3840",
+"status": null,
+"project_name": "TIRUPATI BALAJI UDYOG VIHAR",
+"site_address": "VILLAGE RAMAYAN, NEAR DPS SCHOOL ,NH-9 HANSI",
+"tehsil": "HANSI",
+"land_acres": 14.575,
+"plot_acres": 6.403,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 345.38,
+"count": 1
+},
+{
+"plot_sqm": 407.97,
+"count": 1
+},
+{
+"plot_sqm": 424.42,
+"count": 1
+},
+{
+"plot_sqm": 431.11,
+"count": 1
+},
+{
+"plot_sqm": 439.41,
+"count": 1
+},
+{
+"plot_sqm": 394.93,
+"count": 1
+},
+{
+"plot_sqm": 413.93,
+"count": 15
+},
+{
+"plot_sqm": 378.3,
+"count": 1
+},
+{
+"plot_sqm": 388.96,
+"count": 1
+},
+{
+"plot_sqm": 554.08,
+"count": 1
+},
+{
+"plot_sqm": 715.75,
+"count": 1
+},
+{
+"plot_sqm": 806.96,
+"count": 1
+},
+{
+"plot_sqm": 865.71,
+"count": 1
+},
+{
+"plot_sqm": 923.77,
+"count": 1
+},
+{
+"plot_sqm": 981.83,
+"count": 1
+},
+{
+"plot_sqm": 1039.9,
+"count": 1
+},
+{
+"plot_sqm": 1097.961,
+"count": 1
+},
+{
+"plot_sqm": 420.44,
+"count": 14
+},
+{
+"plot_sqm": 425.87,
+"count": 1
+},
+{
+"plot_sqm": 548.03,
+"count": 1
+},
+{
+"plot_sqm": 283.77,
+"count": 1
+},
+{
+"plot_sqm": 361.19,
+"count": 1
+},
+{
+"plot_sqm": 393.44,
+"count": 1
+},
+{
+"plot_sqm": 464.62,
+"count": 1
+},
+{
+"plot_sqm": 537.82,
+"count": 1
+},
+{
+"plot_sqm": 606.29,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "20-10-2030",
+"kind": "commercial"
+},
+{
+"reg": "HRERA-PKL-HSR-656-2025",
+"rera": "RERA-PKL-1563-2024",
+"name": "UKLANA ENCLAVE",
+"promoter": "AGROHA DEVELOPRS",
+"address": "SECTOR - 8, UKLANA DISTRICT - HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3181",
+"status": null,
+"project_name": "UKLANA ENCLAVE",
+"site_address": "SECTOR - 8, UKLANA DISTRICT - HISAR",
+"tehsil": "UKLANA ST",
+"land_acres": 11.03125,
+"plot_acres": 5.5746,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 149.79,
+"count": 24
+},
+{
+"plot_sqm": 129.41,
+"count": 1
+},
+{
+"plot_sqm": 89.54,
+"count": 1
+},
+{
+"plot_sqm": 147.28,
+"count": 8
+},
+{
+"plot_sqm": 89.95,
+"count": 6
+},
+{
+"plot_sqm": 100.43,
+"count": 38
+},
+{
+"plot_sqm": 101.66,
+"count": 40
+},
+{
+"plot_sqm": 91.83,
+"count": 13
+},
+{
+"plot_sqm": 147.29,
+"count": 1
+},
+{
+"plot_sqm": 90.47,
+"count": 1
+},
+{
+"plot_sqm": 111.3,
+"count": 18
+},
+{
+"plot_sqm": 95.89,
+"count": 12
+},
+{
+"plot_sqm": 97.33,
+"count": 2
+},
+{
+"plot_sqm": 127.61,
+"count": 8
+},
+{
+"plot_sqm": 131.95,
+"count": 4
+},
+{
+"plot_sqm": 117.43,
+"count": 23
+},
+{
+"plot_sqm": 115.33,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "31-03-2028",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-916-2026",
+"rera": "RERA-PKL-2078-2026",
+"name": "URBAN VISTA",
+"promoter": "MITTAL RATHEE LAND DEVELOPERS LLP",
+"address": "SECTOR 39 VILLAGE BIR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/4161",
+"status": null,
+"project_name": "URBAN VISTA",
+"site_address": "SECTOR 39 VILLAGE BIR",
+"tehsil": "HISAR",
+"land_acres": 12.3125,
+"plot_acres": 6.4148,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 149.99,
+"count": 68
+},
+{
+"plot_sqm": 149.99,
+"count": 60
+},
+{
+"plot_sqm": 147.405,
+"count": 30
+},
+{
+"plot_sqm": 146.148,
+"count": 16
+}
+],
+"apartments": [],
+"completion": "08-10-2030",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-661-2025",
+"rera": "RERA-PKL-1572-2024",
+"name": "VDL GREEN CITY",
+"promoter": "VISHVADHARAM ESTATE LLP",
+"address": "VILLAGE BEED, SECTOR 36-39 DI STRICT HISAR",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3203",
+"status": null,
+"project_name": "VDL GREEN CITY",
+"site_address": "VILLAGE BEED, SECTOR 36-39 DISTRICT HISAR",
+"tehsil": "HISAR",
+"land_acres": 12.05625,
+"plot_acres": 6.243,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 136.573,
+"count": 31
+},
+{
+"plot_sqm": 141.458,
+"count": 31
+},
+{
+"plot_sqm": 117.404,
+"count": 10
+},
+{
+"plot_sqm": 84.828,
+"count": 27
+},
+{
+"plot_sqm": 83.457,
+"count": 16
+},
+{
+"plot_sqm": 88.05,
+"count": 80
+},
+{
+"plot_sqm": 129.861,
+"count": 37
+}
+],
+"apartments": [],
+"completion": "30-06-2026",
+"kind": "plot"
+},
+{
+"reg": "HRERA-PKL-HSR-770-2025",
+"rera": "RERA-PKL-1772-2025",
+"name": "VS INDUSTRIAL PARK",
+"promoter": "VS INFRATECH",
+"address": "SECTOR -18, HANSI",
+"district": "HISAR",
+"url": "https://haryanarera.gov.in/view_project/project_preview_open/3623",
+"status": null,
+"project_name": "VS INDUSTRIAL PARK",
+"site_address": "SECTOR -18, HANSI",
+"tehsil": "HANSI",
+"land_acres": 10.9125,
+"plot_acres": 7.0558,
+"apartment_land_acres": 0.0,
+"plots": [
+{
+"plot_sqm": 875.85,
+"count": 3
+},
+{
+"plot_sqm": 898.51,
+"count": 6
+},
+{
+"plot_sqm": 1051.58,
+"count": 1
+},
+{
+"plot_sqm": 370.1,
+"count": 2
+},
+{
+"plot_sqm": 354.57,
+"count": 1
+},
+{
+"plot_sqm": 724.51,
+"count": 2
+},
+{
+"plot_sqm": 782.51,
+"count": 1
+},
+{
+"plot_sqm": 418.19,
+"count": 9
+},
+{
+"plot_sqm": 360.88,
+"count": 1
+},
+{
+"plot_sqm": 527.92,
+"count": 7
+},
+{
+"plot_sqm": 559.04,
+"count": 1
+},
+{
+"plot_sqm": 639.65,
+"count": 2
+},
+{
+"plot_sqm": 418.15,
+"count": 1
+},
+{
+"plot_sqm": 266.11,
+"count": 5
+},
+{
+"plot_sqm": 310.75,
+"count": 4
+},
+{
+"plot_sqm": 325.42,
+"count": 1
+},
+{
+"plot_sqm": 288.45,
+"count": 2
+},
+{
+"plot_sqm": 349.11,
+"count": 1
+},
+{
+"plot_sqm": 274.77,
+"count": 7
+},
+{
+"plot_sqm": 332.55,
+"count": 1
+}
+],
+"apartments": [],
+"completion": "30-06-2028",
+"kind": "commercial"
+}
+]

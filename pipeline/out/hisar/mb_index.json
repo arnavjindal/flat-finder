@@ -1,0 +1,142 @@
+[
+{
+"mb_id": "5331693",
+"name": "Global Spaces Hisar",
+"developer": null,
+"locality": "Rajeev Nagar",
+"pincode": "125001",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/global-spaces-hisar-rajeev-nagar-hisar-pdpid-4d4235333331363933"
+},
+{
+"mb_id": "5458549",
+"name": "Girdhar Rameshwaram Greens",
+"developer": "Girdhar Gopal Builder and Developer",
+"locality": "Budha Khera",
+"pincode": "125113",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/girdhar-rameshwaram-greens-budha-khera-hisar-pdpid-4d4235343538353439",
+"possession": "2030",
+"units": 144,
+"acres": 9,
+"prop_types": "10350",
+"card_units": [
+{
+"bhk": null,
+"sqft": 1309.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1353.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1393.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1397.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1431.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1442.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1471.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1507.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1537.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1550.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1554.0,
+"kind": "10000"
+},
+{
+"bhk": null,
+"sqft": 1577.0,
+"kind": "10000"
+}
+],
+"images": [
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Project-Photo-15-Girdhar-Rameshwaram-Greens-Hisar-5458549_685_1024_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Project-Photo-15-Girdhar-Rameshwaram-Greens-Hisar-5458549_685_1024.jpg"
+},
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Project-Photo-14-Girdhar-Rameshwaram-Greens-Hisar-5458549_682_1021_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Project-Photo-14-Girdhar-Rameshwaram-Greens-Hisar-5458549_682_1021.jpg"
+},
+{
+"thumb": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/09/30/Master-Plan-1-Girdhar-Rameshwaram-Greens-Hisar-5458549_727_1137_310_462.jpg",
+"full": "https://img.staticmb.com/mbimages/project/2026/09/30/Master-Plan-1-Girdhar-Rameshwaram-Greens-Hisar-5458549_727_1137.jpg"
+}
+]
+},
+{
+"mb_id": "5219537",
+"name": "Laxmi Plaza",
+"developer": null,
+"locality": "Urban Estate II",
+"pincode": "125001",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/laxmi-plaza-urban-estate-ii-hisar-pdpid-4d4235323139353337"
+},
+{
+"mb_id": "5411687",
+"name": "Prem Bhawan",
+"developer": null,
+"locality": "Balsamand Road",
+"pincode": "125004",
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/prem-bhawan-balsamand-road-hisar-pdpid-4d4235343131363837"
+},
+{
+"mb_id": "5406629",
+"name": "Ishwar Bharti Apartments",
+"developer": null,
+"locality": "Hisar Road",
+"pincode": null,
+"city_id": "2956",
+"type_codes": [
+"10350"
+],
+"url": "https://www.magicbricks.com/ishwar-bharti-apartments-hisar-road-hisar-pdpid-4d4235343036363239"
+}
+]

@@ -14,6 +14,7 @@ import statistics
 import urllib.parse
 
 import geo
+import mb_parse
 import pricing
 import rooms_model
 import verified
@@ -21,7 +22,7 @@ import verified
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "out"
 WEB = ROOT.parent / "web" / "public" / "data"
-GENERIC = {"the", "of", "at", "in", "sector", "gurgaon", "gurugram", "residency", "residences", "homes",
+GENERIC = {"the", "of", "at", "in", "sector", "gurgaon", "gurugram", "hisar", "hissar", "residency", "residences", "homes",
            "apartments", "apartment", "towers", "tower", "heights", "city", "phase", "park", "estate",
            "floors", "society", "cghs", "group", "housing", "and", "by", "new", "greens", "green", "plaza"}
 TOWER_H = 55.0  # visual default height (m) for generated apartment towers; shapes are not data
@@ -44,6 +45,10 @@ def kind_of(p):
             for k in ("apartment", "builder floor", "villa", "plot", "commercial"):
                 if k in kinds:
                     return k
+        listed = [mb_parse.LISTING_KIND.get(l.get("type")) for l in (p.get("sale_listings") or []) + (p.get("rent_listings") or [])]
+        listed = [k for k in listed if k]
+        if listed:  # what the project's own listings are (Global Spaces Hisar: plots)
+            return max(set(listed), key=listed.count)
         return infer_kind_from_name(p)
     if "apartment" in t or "penthouse" in t or "studio" in t or "flat" in t:
         return "apartment"
@@ -155,11 +160,24 @@ def match_verified(v, projects, taken=()):
     return best
 
 
-def events_for(s):
+def events_for(s, city_name="Gurgaon"):
     ev = []
     sid = s["id"]
     src = s.get("url")
-    ev.append({"sid": sid, "step": "Located on map", "finding": f"{s['locality'] or 'Gurgaon'} · {s['lat']:.4f}, {s['lng']:.4f}", "url": src})
+    if s.get("listing"):
+        l = s["listing"]
+        where = "exact pin" if l["location"] == "pin" else f"around the {s['locality'] or 'locality'} point · approximate (no exact pin on Magicbricks)"
+        ev.append({"sid": sid, "step": "Located on map", "finding": f"{where} · {s['lat']:.4f}, {s['lng']:.4f}", "url": src})
+        bits = [l["price_text"] and ("₹" + l["price_text"] + ("/mo" if l["deal"] == "rent" else "")), l["area"], l["posted"] and "posted " + l["posted"]]
+        ev.append({"sid": sid, "step": f"Listed for {l['deal']} on Magicbricks", "finding": " · ".join(b for b in bits if b), "url": src})
+        return ev
+    if s.get("placed_by"):  # HRERA filing with no coordinates, placed at the OSM area of the same name
+        ev.append({"sid": sid, "step": "Located on map", "finding": f"OSM area {s['placed_by']['name']} · {s['lat']:.4f}, {s['lng']:.4f}",
+                   "url": "https://www.openstreetmap.org/" + s["placed_by"]["osm"]})
+    else:
+        ev.append({"sid": sid, "step": "Located on map", "finding": f"{s['locality'] or city_name} · {s['lat']:.4f}, {s['lng']:.4f}", "url": src})
+    if s.get("hrera_url"):
+        ev.append({"sid": sid, "step": "HRERA filing", "finding": s.get("rera_id") or "registered project", "url": s["hrera_url"]})
     bits = [f"{int(s['towers'])} towers" if s.get("towers") else None, f"{int(s['units']):,} units" if s.get("units") else None,
             f"{s['acres']} acres" if s.get("acres") else None]
     if any(bits):
@@ -222,14 +240,158 @@ def shapes_for(s, area, bld_grid, sid_seed):
     return feats, shape
 
 
+SQM_TO_SQFT = 10.7639
+PLACE_WORDS = {"enclave", "colony", "nagar", "vihar", "complex", "estates", "dham", "avenue", "royal", "urban", "vista", "model", "town"}
+
+
+def sector_label(address):
+    m = re.search(r"SECTOR[\s.-]*(\d+[A-Z]?)", (address or "").upper())
+    return f"Sector {m.group(1)}" if m else None
+
+
+def filed_units(h):
+    """Unit rows exactly as filed with HRERA: apartment carpet areas and plot sizes (square metres)."""
+    units = []
+    for a in h.get("apartments") or []:
+        m = re.search(r"(\d)\s*BHK", a["type"] or "", re.I)
+        units.append({"label": f"{a['type']} · {a['count']} filed" + (f" · {a['carpet_sqm']:g} sq m carpet" if a.get("carpet_sqm") else ""),
+                      "bhk": int(m.group(1)) if m else None, "carpet_sqft": round(a["carpet_sqm"] * SQM_TO_SQFT) if a.get("carpet_sqm") else None,
+                      "bedrooms": [], "rooms_complete": False, "confidence": "filing", "source": h["url"], "page": None})
+    for p in h.get("plots") or []:
+        units.append({"label": f"Plot {p['plot_sqm']:g} sq m · {p['count']} filed", "bhk": None, "bedrooms": [], "rooms_complete": False,
+                      "confidence": "filing", "source": h["url"], "page": None})
+    return units
+
+
+def add_hrera(city, cfg, projects, areas, in_box):
+    """Attach each HRERA filing to its Magicbricks project. A filing with no portal project is added on its own
+    only when a named OSM area of the same name places it (HRERA pages carry no coordinates).
+    Returns (attached, added, not placed)."""
+    f = OUT / city / "hrera_projects.json"
+    if not f.exists():
+        return 0, [], 0
+    import hrera  # imported here: hrera imports tokens() from this module
+    filed = json.loads(f.read_text())
+    attached = 0
+    for p in projects:
+        h = hrera.match(p, [x for x in filed if not x.get("_mb")])
+        if h:
+            h["_mb"] = p["mb_id"]
+            p["hrera_url"] = h["url"]
+            p["rera_id"] = p.get("rera_id") or h["rera"]
+            p["extra_units"] = filed_units(h)
+            attached += 1
+    added, unplaced = [], 0
+    for h in filed:
+        if h.get("_mb"):
+            continue
+        want = tokens(h["name"])  # the whole name must match: "Green Enclave" is not "Sainik Adarsh Enclave"
+        area = next((a for a in areas if want - PLACE_WORDS and want == tokens(a["properties"]["name"])
+                     and in_box(dict(zip(("lng", "lat"), geo.centroid(a["geometry"]["coordinates"][0]))))), None)
+        if not area:
+            unplaced += 1
+            continue
+        lng, lat = geo.centroid(area["geometry"]["coordinates"][0])
+        completion = re.search(r"(\d{4})$", h.get("completion") or "")
+        added.append({"mb_id": "h" + h["url"].rstrip("/").rsplit("/", 1)[-1], "name": h["name"].title(), "developer": (h["promoter"] or "").title() or None,
+                      "locality": sector_label(h.get("site_address") or h["address"]) or (h.get("site_address") or h["address"]).title(),
+                      "lat": lat, "lng": lng, "status": h.get("status") or "Registered with HRERA", "possession": completion.group(1) if completion else None,
+                      "rera_id": h["rera"], "units": sum(x["count"] for x in h["apartments"] or h["plots"]) or None,
+                      "towers": sum(x["towers"] or 0 for x in h["apartments"]) or None, "acres": h.get("land_acres"),
+                      "kind_fixed": h["kind"], "extra_units": filed_units(h), "url": h["url"], "hrera_url": h["url"],
+                      "placed_by": {"name": area["properties"]["name"], "osm": area["properties"]["osm"]}})
+    return attached, added, unplaced
+
+
+LISTING_LABEL = {"house": "house", "villa": "villa", "builder floor": "builder floor", "apartment": "flat", "plot": "plot", "farmland": "farmland"}
+
+
+def add_listings(city, in_box):
+    """Individual Magicbricks listings not in any project (houses, floors, flats, plots, farmland; sale and rent).
+    Placed at the listing's own pin when it is a real one. Otherwise around its locality's point, spread on a small
+    spiral so each can be clicked, and marked approximate. A point Magicbricks gives to three or more different
+    localities is its city-wide fallback and places nothing. Returns (records, not placed, on an exact pin)."""
+    f = OUT / city / "mb_listings.json"
+    if not f.exists():
+        return [], 0, 0
+    recs = sorted((r for r in json.loads(f.read_text()) if not r["in_project"]), key=lambda r: r["id"])
+    names = defaultdict(set)
+    for r in recs:
+        for pt in (r["locality_point"], r["pin"]):
+            if pt:
+                names[tuple(pt)].add(r["locality"])
+    fallback = [pt for pt, n in names.items() if len(n) > 2]  # neighbouring sectors may share one point; 3+ is the city default
+
+    def real(pt):
+        return bool(pt) and all(geo.dist_m(pt[::-1], q[::-1]) > 60 for q in fallback)
+    spiral, out, unplaced, pinned = defaultdict(int), [], 0, 0
+    for r in recs:
+        lp = r["locality_point"] if real(r["locality_point"]) else None
+        if real(r["pin"]) and not (lp and geo.dist_m(r["pin"][::-1], lp[::-1]) < 30):
+            (lat, lng), how = r["pin"], "pin"
+        elif lp:
+            k = spiral[tuple(lp)]
+            spiral[tuple(lp)] += 1
+            d, a = 30 + 14 * math.sqrt(k), k * 2.39996  # metres from the locality point, golden-angle steps
+            lat = lp[0] + d * math.sin(a) / geo.M_PER_DEG_LAT
+            lng = lp[1] + d * math.cos(a) / geo.m_per_deg_lng(lp[0])
+            how = "locality"
+        else:
+            unplaced += 1
+            continue
+        if not in_box({"lat": lat, "lng": lng}):
+            unplaced += 1
+            continue
+        pinned += how == "pin"
+        label = LISTING_LABEL[r["kind"]]
+        area = f"{r['area']:g} {r['area_unit'].lower()}" if r.get("area") and r.get("area_unit") else None
+        head = f"{r['bhk']} BHK {label}" if r["bhk"] else label.capitalize() + (f" {area}" if area else "")
+        rent = r["deal"] == "rent"
+        price = r["price"]
+        sale_l = [{"bhk": r["bhk"], "price": price, "psf": round(price / r["built_sqft"]) if price and r.get("built_sqft") and not rent else None}] if r["bhk"] and price else []
+        out.append({"mb_id": "l" + r["id"], "name": head + (" for rent" if rent else "") + (f", {r['locality']}" if r["locality"] else ""),
+                    "developer": f"{r['seller']} listing" if r.get("seller") else "Listing", "locality": r["locality"], "lat": lat, "lng": lng,
+                    "status": r.get("status"), "price_min": None if rent else price, "price_max": None if rent else price,
+                    "kind_fixed": r["kind"], "config_text": r["type"] + (" for rent" if rent else " for sale"), "url": r["url"],
+                    "extra_units": [{"label": head + (f" · {area}" if area and r["bhk"] else ""), "bhk": r["bhk"], "size_sqft": r.get("built_sqft"),
+                                     "bedrooms": [], "rooms_complete": False, "confidence": "portal", "source": r["url"], "page": None}],
+                    "images": [{"thumb": r["image"], "full": r["image"]}] if r.get("image") else [],
+                    "rent_listings" if rent else "sale_listings": sale_l, "rent_count" if rent else "sale_count": 1,
+                    "listing": {"deal": r["deal"], "price_text": r.get("price_text"), "area": area, "carpet": r.get("carpet"), "posted": r.get("posted"),
+                                "seller": r.get("seller"), "floor": r.get("floor"), "furnished": r.get("furnished"), "location": how}})
+    return out, unplaced, pinned
+
+
+def listing_shapes(s):
+    """A small footprint for one listing: farmland and plots as an outline, homes with one low building."""
+    r = {"farmland": 30, "plot": 14}.get(s["kind"], 12)
+    feats = [{"type": "Feature", "properties": {"sid": s["id"], "role": "site"}, "geometry": {"type": "Polygon", "coordinates": [geo.circle((s["lng"], s["lat"]), r, n=16)]}}]
+    if s["kind"] not in ("plot", "farmland"):
+        h = 14.0 if s["kind"] in ("apartment", "builder floor") else 8.0
+        feats.append({"type": "Feature", "properties": {"sid": s["id"], "role": "bld", "h": h, "shape": "generated"},
+                      "geometry": {"type": "Polygon", "coordinates": [geo.rect((s["lng"], s["lat"]), 10, 8, 0)]}})
+    return feats
+
+
 def main(city="gurgaon"):
     cfg = json.loads((ROOT.parent / "data" / "cities.json").read_text())[city]
     out = OUT / city
-    raw = json.loads((out / "mb_projects.json").read_text())
-    located = [p for p in raw if p.get("lat") and p.get("lng") and 28.2 < p["lat"] < 28.7 and 76.7 < p["lng"] < 77.3]
+    raw = json.loads((out / "mb_projects.json").read_text()) if (out / "mb_projects.json").exists() else []
+    s0, w0, n0, e0 = cfg["bbox"]
+    s0, w0, n0, e0 = cfg.get("located_box") or (s0 - 0.05, w0 - 0.05, n0 + 0.05, e0 + 0.05)
+
+    def in_box(p):
+        return s0 < p["lat"] < n0 and w0 < p["lng"] < e0
+    located = [p for p in raw if p.get("lat") and p.get("lng") and in_box(p)]
     not_located = len(raw) - len(located)
     projects = dedupe(located)
     areas = json.loads((out / "osm_areas.geojson").read_text())["features"]
+    hrera_attached, hrera_added, hrera_unplaced = add_hrera(city, cfg, projects, areas, in_box)
+    projects += hrera_added
+    not_located += hrera_unplaced
+    listings, listings_unplaced, listings_pinned = add_listings(city, in_box)
+    projects += listings  # after dedupe: listings with similar titles are different homes
+    not_located += listings_unplaced
     area_grid = Grid(areas, lambda a: geo.centroid(a["geometry"]["coordinates"][0]))
     blds = json.loads((out / "osm_buildings.geojson").read_text())["features"]
     for b in blds:
@@ -257,6 +419,12 @@ def main(city="gurgaon"):
              "prices": pricing.listing_stats(p)}
         if s["towers"] and s["towers"] > 60:  # portal typo (e.g. 1500 towers): not plausible, drop it
             s["towers"] = None
+        if p.get("kind_fixed"):  # HRERA-only project or single listing: type as filed or listed
+            s["kind"], s["kind_inferred"] = p["kind_fixed"], False
+        s["unit_types"] += p.get("extra_units") or []
+        for k in ("hrera_url", "placed_by", "listing"):
+            if p.get(k):
+                s[k] = p[k]
         p["_s"] = s
         societies.append(s)
 
@@ -423,6 +591,11 @@ def main(city="gurgaon"):
         s["prices"] = {str(b): v for b, v in sorted(s["prices"].items())}
 
     for i, s in enumerate(societies):
+        if s.get("listing"):  # a single home: never claims an OSM area outline
+            shapes.extend(listing_shapes(s))
+            s["shape"] = "listing"
+            events.extend(events_for(s, cfg["name"]))
+            continue
         area = match_area(s, area_grid)
         if area and area["properties"]["osm"] in used_areas:
             area = None  # another society already owns this boundary
@@ -432,17 +605,22 @@ def main(city="gurgaon"):
         f, shape = shapes_for(s, area, bld_grid, i)
         s["shape"] = shape
         shapes.extend(f)
-        events.extend(events_for(s))
+        events.extend(events_for(s, cfg["name"]))
 
     WEB.mkdir(parents=True, exist_ok=True)
     doc = {"city": {"id": city, "name": cfg["name"], "center": cfg["center"], "zoom": cfg["zoom"]},
             "price_model": model,
             "room_model": room_model,
-            "counts": {"listed": len(raw), "on_map": len(societies), "not_located": not_located,
+            "counts": {"listed": len(raw) + len(hrera_added) + hrera_unplaced + len(listings) + listings_unplaced, "on_map": len(societies),
+                       "not_located": not_located, "listings": len(listings), "listings_exact_pin": listings_pinned,
+                       "listings_not_placed": listings_unplaced,
                        "ai_read": sum(1 for s in societies if s.get("ai_read")),
                        "for_sale": sum(s["sale_count"] or 0 for s in societies), "for_rent": sum(s["rent_count"] or 0 for s in societies),
-                       "verified": sum(s["verified"] for s in societies)},
-            "sources": ["Magicbricks project pages", "OpenStreetMap contributors", "HRERA Gurugram", "Builder brochures (verified rows)"],
+                       "verified": sum(s["verified"] for s in societies), "hrera_attached": hrera_attached,
+                       "hrera_only": len(hrera_added), "hrera_not_placed": hrera_unplaced},
+            "sources": ["Magicbricks project pages", "OpenStreetMap contributors"]
+            + ([f"HRERA {({1: 'Panchkula', 2: 'Gurugram'})[cfg['hrera']['authority']]}"] if cfg.get("hrera") else [])
+            + ["Builder brochures (verified rows)"],
             "societies": societies, "events": events}
     details = {}
     for s in societies:  # heavy per-society text, loaded only when a card opens
